@@ -10,7 +10,7 @@ export function DribbbleCard() {
    const MotionLink = motion(Link)
    return (
       <MotionLink
-         href={"https://dribbble.com/oliver"}
+         href={"https://dribbble.com/charles5991"}
          target="_blank"
          title="Dribbble profile"
          variants={defaultVariantsNoDelay}

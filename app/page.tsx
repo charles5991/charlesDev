@@ -6,7 +6,7 @@ import Link from "next/link"
 export default function Home() {
    return (
       <section>
-         <Heading>Hi, I&apos;m Oliver ✌️</Heading>
+         <Heading>Hi, I&apos;m Charles ✌️</Heading>
 
          <section className="prose prose-neutral mt-8 max-w-full dark:prose-invert">
             <Text>
@@ -15,9 +15,11 @@ export default function Home() {
                <Link href={"/work"}>
                   <span className="text-neutral-400">/</span>work
                </Link>{" "}
-               as a full-stack developer at{" "}
-               <a href="https://hifranklin.com">Franklin</a> - a fintech
-               startup, building a banking solution for e-commerce.
+               as a Frontend developer at{" "}
+               <a href="https://www.plazapremiumlounge.com/en-uk">
+                  Plaza Premium Group
+               </a>{" "}
+               - a fintech startup, building a banking solution for e-commerce.
             </Text>
          </section>
 

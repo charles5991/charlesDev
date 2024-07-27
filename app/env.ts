@@ -12,7 +12,14 @@ export const env = createEnv({
       POSTGRES_URL: z.string().url(),
       RESEND_API_KEY: z.string(),
    },
-   // experimental__runtimeEnv: {
-   //    GITHUB_TOKEN: process.env.GITHUB_TOKEN,
-   // },
+   experimental__runtimeEnv: {
+      GITHUB_TOKEN: process.env.GITHUB_TOKEN,
+      AUTH_GITHUB_ID: process.env.AUTH_GITHUB_ID,
+      AUTH_GITHUB_SECRET: process.env.AUTH_GITHUB_SECRET,
+      POSTGRES_DATABASE: process.env.POSTGRES_DATABASE,
+      POSTGRES_HOST: process.env.POSTGRES_HOST,
+      POSTGRES_PASSWORD: process.env.POSTGRES_PASSWORD,
+      POSTGRES_URL: process.env.POSTGRES_URL,
+      RESEND_API_KEY: process.env.RESEND_API_KEY,
+   },
 })

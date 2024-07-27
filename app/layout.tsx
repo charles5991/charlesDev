@@ -11,11 +11,11 @@ import "./globals.css"
 const epilogue = Epilogue({ subsets: ["latin"] })
 
 const metainfo = {
-   name: "Oliver Cederborg",
-   description: "Full-stack developer and designer from Copenhagen, Denmark.",
+   name: "Charles Dev",
+   description: "Full-stack developer and designer from Kuala Lumpur, Malaysia",
    url: "https://olivercederborg.com",
    image: "/meta/meta.png",
-   twitter: "@olivercederborg",
+   twitter: "@charles37144141",
 }
 
 export const metadata: Metadata = {

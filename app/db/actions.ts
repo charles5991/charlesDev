@@ -5,7 +5,6 @@ import { desc, eq } from "drizzle-orm"
 import { Session } from "next-auth"
 import { revalidatePath } from "next/cache"
 import { Resend } from "resend"
-
 import { auth } from "@/app/auth"
 import { db } from "@/app/db"
 import { guestbook } from "@/app/db/schema"

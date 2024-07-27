@@ -56,7 +56,7 @@ export function LocationCard() {
             resolvedTheme === "dark" ? [0.5, 0.5, 0.5] : [0.9, 0.9, 0.9],
          markers: [
             // copenhagen latitute and longitude
-            { location: [55.6761, 12.5683], size: 0.4 },
+            { location: [4.2105, 101.9758], size: 0.4 },
          ],
          scale: 1,
          onRender: (state) => {
@@ -90,7 +90,7 @@ export function LocationCard() {
       >
          <div className="z-10 flex items-center gap-2">
             <Globe className="size-[18px]" />
-            <h2 className="text-sm font-light">Copenhagen</h2>
+            <h2 className="text-sm font-light">Malaysia, KL</h2>
          </div>
          <div className="absolute inset-x-0 bottom-[-75%] mx-auto aspect-square h-[150%] translate-x-[-12.5%] [@media(max-width:420px)]:h-[320px]">
             <div

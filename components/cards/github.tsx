@@ -20,7 +20,7 @@ export function GithubStatsCard({
    const MotionLink = motion(Link)
    return (
       <MotionLink
-         href="https://github.com/olivercederborg"
+         href="https://github.com/charles5991"
          target="_blank"
          variants={defaultVariantsNoDelay}
          whileHover={{ scale: 1.05 }}
@@ -33,7 +33,7 @@ export function GithubStatsCard({
             </div>
 
             <div className="flex flex-wrap items-end gap-4">
-               <GithubStatItem label="Followers" value={followers} />
+               <GithubStatItem label="Followers" value={20} />
                <GithubStatItem label="Stars" value={stars} />
                <GithubStatItem
                   label="Contributions"
