@@ -27,8 +27,9 @@ export function LocationCard() {
    }))
 
    React.useEffect(() => {
-      let width = 0
-      let phi = 3
+      let width = 1
+      let phi = 101.6869 * (Math.PI / 180) // Convert to radians
+      let theta = 3.139 * (Math.PI / 360) // Convert to radians
       let direction = 1
 
       const onResize = () => {
@@ -44,8 +45,8 @@ export function LocationCard() {
          devicePixelRatio: 2,
          width: width * 2,
          height: width * 2,
-         phi: 0,
-         theta: 0.2,
+         phi: phi,
+         theta: theta,
          dark: resolvedTheme === "dark" ? 1 : 0,
          diffuse: 3,
          mapSamples: 36_000,

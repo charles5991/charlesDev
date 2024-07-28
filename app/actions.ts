@@ -53,7 +53,7 @@ export async function getGithubStats() {
             }
          }
       `,
-      { login: "olivercederborg" },
+      { login: "charles5991" },
    )
    return {
       issues: user.closedIssues.totalCount + user.openIssues.totalCount,
@@ -102,7 +102,7 @@ export async function getGithubContributions() {
             }
          }
       `,
-      { login: "olivercederborg" },
+      { login: "charles5991" },
    )
 
    const weeklyContributions =

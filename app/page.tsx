@@ -10,8 +10,8 @@ export default function Home() {
 
          <section className="prose prose-neutral mt-8 max-w-full dark:prose-invert">
             <Text>
-               I&apos;m a developer with a passion for building beautiful and
-               functional applications. I currently{" "}
+               I&apos;m a frontend developer with a passion for building
+               beautiful and functional applications. I currently{" "}
                <Link href={"/work"}>
                   <span className="text-neutral-400">/</span>work
                </Link>{" "}
@@ -19,7 +19,12 @@ export default function Home() {
                <a href="https://www.plazapremiumlounge.com/en-uk">
                   Plaza Premium Group
                </a>{" "}
-               - a fintech startup, building a banking solution for e-commerce.
+               - world’s first and largest award-winning independent airport
+               lounge network., building a rewards redeeming platform{" "}
+               <a href="https://www.mysmarttraveller.com/en-gb/home">
+                  Smart Traveller
+               </a>{" "}
+               .
             </Text>
          </section>
 

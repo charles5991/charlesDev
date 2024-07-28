@@ -1,4 +1,5 @@
 import { auth } from "@/app/auth"
+import { signIn, useSession } from "next-auth/react"
 import { getGuestbookEntries } from "@/app/db/queries"
 import { SignIn, SignOut } from "@/app/guestbook/components/buttons"
 import { Entries } from "@/app/guestbook/components/entries"
@@ -12,7 +13,7 @@ export const metadata = {
 
 export default async function GuestbookPage() {
    const session = await auth()
-   const isLoggedIn = session?.user?.email
+   const isLoggedIn = !!session?.user?.email
 
    const entries = await getGuestbookEntries()
 
@@ -26,7 +27,6 @@ export default async function GuestbookPage() {
             )}
             Leave a mark by signing my guestbook
          </Heading>
-
          <FormShell>
             {isLoggedIn ? (
                <>

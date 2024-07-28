@@ -33,7 +33,7 @@ export function GithubStatsCard({
             </div>
 
             <div className="flex flex-wrap items-end gap-4">
-               <GithubStatItem label="Followers" value={20} />
+               <GithubStatItem label="Followers" value={followers} />
                <GithubStatItem label="Stars" value={stars} />
                <GithubStatItem
                   label="Contributions"

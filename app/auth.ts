@@ -6,6 +6,9 @@ export const {
    auth,
    signIn,
    signOut,
-} = NextAuth({
-   providers: [GitHub],
+} = NextAuth((req) => {
+   if (req) {
+      console.log(req)
+   }
+   return { providers: [GitHub] }
 })
