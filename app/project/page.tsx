@@ -1,5 +1,5 @@
 export const metadata = {
-   title: "Guestbook - Oliver Cederborg",
+   title: "Guestbook - Charles Dev",
    description: "Guestbook where visitors can leave a comment by signing.",
 }
 

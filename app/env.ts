@@ -21,5 +21,5 @@ export const env = createEnv({
       POSTGRES_PASSWORD: process.env.POSTGRES_PASSWORD,
       POSTGRES_URL: process.env.POSTGRES_URL,
       RESEND_API_KEY: process.env.RESEND_API_KEY,
-   } as Record<string, string | undefined>, // Type assertion
+   } as Record<string, string | undefined>,
 })

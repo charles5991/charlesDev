@@ -22,7 +22,7 @@ async function getSession(): Promise<Session> {
 async function hasSignedToday(email: string) {
    const now = new Date()
 
-   if (email === "hey@olivercederborg.com") {
+   if (email === "charleschan5991@gmail.com") {
       return { hasSigned: false }
    }
 
@@ -87,8 +87,8 @@ export async function saveGuestbookEntry(formData: FormData) {
       })
 
       await resend.emails.send({
-         from: `Guestbook <guestbook@olivercederborg.com>`,
-         to: ["hey@olivercederborg.com"],
+         from: `Guestbook <guestbook@gmail.com>`,
+         to: ["charleschan5991@gmail.com"],
          subject: "Guestbook Entry",
          text: `From: ${createdBy}\nEntry: ${body}`,
       })

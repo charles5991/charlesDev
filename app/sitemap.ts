@@ -21,7 +21,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
    return routes.map(({ url, ...rest }) => ({
       ...rest,
-      url: `https://olivercederborg.com${url}`,
+      url: `https://charlesdev2u.vercel.app${url}`,
       lastModified: new Date(),
    }))
 }

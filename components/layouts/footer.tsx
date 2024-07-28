@@ -7,11 +7,11 @@ export function Footer() {
             © {new Date().getFullYear()}
          </p>
          <a
-            href="https://github.com/olivercederborg/olivercederborg.com"
+            href="https://github.com/charles5991"
             target="_blank"
             className="flex items-center gap-2 text-sm text-neutral-700 hover:opacity-75 dark:text-neutral-50"
          >
-            <Github size={14} /> olivercederborg.com
+            <Github size={14} /> Charles Chan
          </a>
       </footer>
    )

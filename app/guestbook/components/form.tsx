@@ -31,7 +31,7 @@ export default function Form() {
                id="entry"
                name="entry"
                type="text"
-               placeholder="elon was here"
+               placeholder="🚀"
                minLength={5}
                maxLength={500}
                required

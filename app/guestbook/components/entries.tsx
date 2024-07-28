@@ -43,7 +43,7 @@ type EntryProps = {
 }
 export function Entry({ entry, className }: EntryProps) {
    const { email, body, createdBy, createdAt } = entry
-   const isAuthor = email === "hey@olivercederborg.com"
+   const isAuthor = email === "charleschan5991@gmail.com"
    const daysSinceEntry = differenceInDays(new Date(), createdAt)
    const timeSinceEntry =
       daysSinceEntry > 1

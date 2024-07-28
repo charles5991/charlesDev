@@ -13,7 +13,7 @@ const epilogue = Epilogue({ subsets: ["latin"] })
 const metainfo = {
    name: "Charles Dev",
    description: "Full-stack developer and designer from Kuala Lumpur, Malaysia",
-   url: "https://olivercederborg.com",
+   url: "https://charlesdev2u.com",
    image: "/meta/meta.png",
    twitter: "@charles37144141",
 }
