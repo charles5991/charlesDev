@@ -50,19 +50,15 @@ export default function Donuts() {
          if (pretag) pretag.innerHTML = b.join("")
       }
 
-      const startAsciiAnimation = () => {
-         setInterval(asciiframe, 50)
-      }
-
-      startAsciiAnimation()
+      const intervalId = setInterval(asciiframe, 50)
 
       return () => {
-         clearInterval(startAsciiAnimation)
+         clearInterval(intervalId)
       }
    }, [])
 
    return (
-      <section className="mt-6">
+      <section>
          <pre id="d"></pre>
       </section>
    )
