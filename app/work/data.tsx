@@ -62,7 +62,7 @@ export const firstpavilion: Job = {
          </span>
       </>
    ),
-   from: "2021",
+   from: "2022",
    to: "2023",
 }
 
@@ -83,6 +83,6 @@ export const rakuten: Job = {
          </span>
       </>
    ),
-   from: "2021",
-   to: "2023",
+   from: "2018",
+   to: "2021",
 }
