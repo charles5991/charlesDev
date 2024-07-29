@@ -11,6 +11,8 @@ export const env = createEnv({
       POSTGRES_PASSWORD: z.string(),
       POSTGRES_URL: z.string().url(),
       RESEND_API_KEY: z.string(),
+      NEXTAUTH_URL: z.string(),
+      NEXTAUTH_SECRET: z.string(),
    },
    experimental__runtimeEnv: {
       GITHUB_TOKEN: process.env.GITHUB_TOKEN,
@@ -21,5 +23,7 @@ export const env = createEnv({
       POSTGRES_PASSWORD: process.env.POSTGRES_PASSWORD,
       POSTGRES_URL: process.env.POSTGRES_URL,
       RESEND_API_KEY: process.env.RESEND_API_KEY,
+      NEXTAUTH_URL: process.env.NEXTAUTH_URL,
+      NEXTAUTH_SECRET: process.env.NEXTAUTH_SECRET,
    } as Record<string, string | undefined>,
 })
