@@ -1,4 +1,5 @@
 import { Cards } from "@/components/cards"
+import Donuts from "@/components/donuts"
 import { Heading } from "@/components/heading"
 import { Text } from "@/components/text"
 import Link from "next/link"
@@ -29,6 +30,10 @@ export default function Home() {
          </section>
 
          <Cards />
+         <div className="hidden md:block">
+            {" "}
+            <Donuts />
+         </div>
       </section>
    )
 }
