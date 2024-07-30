@@ -9,24 +9,25 @@ const showcase = () => {
             <div className="my-4 grid h-full grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-1">
                <div className="col-span-2 flex h-auto flex-col sm:col-span-1 md:col-span-2 md:h-full">
                   <a
-                     href="https://charles-infinitownmock.netlify.app/"
+                     href="https://hilton-casino.vercel.app/"
                      className="group relative flex flex-grow flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40"
                      target="_blank"
                      rel="noopener noreferrer"
                   >
                      <Image
                         fill={true}
-                        src="/assets/town.png"
+                        src="/assets/casino.png"
                         alt=""
                         className="absolute inset-0  object-cover transition-transform duration-500 ease-in-out group-hover:scale-105"
                      />
                      <div className="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
                      <h3 className="text-md absolute left-0 top-0 z-10 p-4 font-medium text-white">
-                        Infinitown (Mock)
+                        Hilton Solana Casino App (Personal)
                      </h3>
                   </a>
                </div>
             </div>
+
             <div className="my-4 grid h-full grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-4">
                <div className="col-span-2 flex h-auto flex-col sm:col-span-1 md:col-span-2 md:h-full">
                   <a
@@ -243,20 +244,20 @@ const showcase = () => {
             <div className="my-4 grid h-full grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-1">
                <div className="col-span-2 flex h-auto flex-col sm:col-span-1 md:col-span-2 md:h-full">
                   <a
-                     href="https://hilton-casino.vercel.app/"
+                     href="https://charles-infinitownmock.netlify.app/"
                      className="group relative flex flex-grow flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40"
                      target="_blank"
                      rel="noopener noreferrer"
                   >
                      <Image
                         fill={true}
-                        src="/assets/casino.png"
+                        src="/assets/town.png"
                         alt=""
                         className="absolute inset-0  object-cover transition-transform duration-500 ease-in-out group-hover:scale-105"
                      />
                      <div className="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
                      <h3 className="text-md absolute left-0 top-0 z-10 p-4 font-medium text-white">
-                        Hilton Casino App (Personal)
+                        Infinitown (Mock)
                      </h3>
                   </a>
                </div>
