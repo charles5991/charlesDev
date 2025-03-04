@@ -1,13 +1,20 @@
 "use client"
 
-import { plaza, irace, firstpavilion, rakuten, type Job } from "@/app/work/data"
+import {
+   plaza,
+   irace,
+   firstpavilion,
+   rakuten,
+   haiya,
+   type Job,
+} from "@/app/work/data"
 import { defaultVariantsNoDelay } from "@/components/motion.variants"
 import { Button } from "@/components/ui/button"
 import { cn } from "@/lib/utils"
 import { AnimatePresence, MotionProps, motion } from "framer-motion"
 import React from "react"
 
-const jobs: Job[] = [plaza, irace, firstpavilion, rakuten]
+const jobs: Job[] = [plaza, irace, firstpavilion, rakuten, haiya]
 
 export function Jobs() {
    return (

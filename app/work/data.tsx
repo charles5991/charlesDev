@@ -7,6 +7,27 @@ export type Job = {
    to: string
 }
 
+export const haiya: Job = {
+   company: "Haiya Sdn Bhd",
+   position: "RnD Engineer",
+   introDescription: (
+      <>
+         I&apos;m currently working at{" "}
+         <a href="https://www.haiya.com.my/">Haiya Sdn Bhd</a>, a 
+         technology company specializing in innovative solutions for the logistics industry.
+         <br />
+         <span className="mt-4 block">
+            Leading research and development initiatives, focusing on implementing 
+            cutting-edge technologies and optimizing system architectures. 
+            Collaborating with cross-functional teams to design and develop 
+            scalable solutions that enhance operational efficiency.
+         </span>
+      </>
+   ),
+   from: "2024",
+   to: "now",
+}
+
 export const plaza: Job = {
    company: "Plaza Premium Group",
    position: "Frontend Developer",
@@ -18,11 +39,14 @@ export const plaza: Job = {
          </a>
          , where I help build and maintain our Angular application.
          <br />
-         <span className="mt-4 block">Deliver </span>
+         <span className="mt-4 block">
+            Deliver a new mobile app feature or product to the market within 3
+            months
+         </span>
       </>
    ),
-   from: "2024",
-   to: "now",
+   from: "2023",
+   to: "2024",
 }
 
 export const irace: Job = {
@@ -74,7 +98,7 @@ export const rakuten: Job = {
          I worked with{" "}
          <a href="https://www.rakutentrade.my/">Rakuten Trade Sdn Bhd</a> a
          FinTech platform that combines best practices in both Malaysia and
-         Japan. We are Malaysia’s first completely online equities broker
+         Japan. We are Malaysia's first completely online equities broker
          offering innovative digital investment opportunities to investors.
          <br />
          <span className="mt-4 block">
