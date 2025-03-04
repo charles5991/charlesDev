@@ -12,7 +12,7 @@ export const haiya: Job = {
    position: "RnD Engineer",
    introDescription: (
       <>
-         I'm currently working at{" "}
+         I`&apos;m currently working at{" "}
          <a href="https://www.haiya.com.my/">Haiya Sdn Bhd</a>, a 
          technology company specializing in innovative solutions for the logistics industry.
          <br />
@@ -98,7 +98,7 @@ export const rakuten: Job = {
          I worked with{" "}
          <a href="https://www.rakutentrade.my/">Rakuten Trade Sdn Bhd</a> a
          FinTech platform that combines best practices in both Malaysia and
-         Japan. We are Malaysia's first completely online equities broker
+         Japan. We are Malaysia`&apos;s first completely online equities broker
          offering innovative digital investment opportunities to investors.
          <br />
          <span className="mt-4 block">
