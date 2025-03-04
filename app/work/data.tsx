@@ -12,7 +12,7 @@ export const haiya: Job = {
    position: "RnD Engineer",
    introDescription: (
       <>
-         I&apos;m currently working at{" "}
+         I'm currently working at{" "}
          <a href="https://www.haiya.com.my/">Haiya Sdn Bhd</a>, a 
          technology company specializing in innovative solutions for the logistics industry.
          <br />
