@@ -21,6 +21,7 @@ export const haiya: Job = {
             cutting-edge technologies and optimizing system architectures. 
             Collaborating with cross-functional teams to design and develop 
             scalable solutions that enhance operational efficiency.
+            Proposed team to use UmiJs Framework and React Native EXPO.
          </span>
       </>
    ),
@@ -41,7 +42,7 @@ export const plaza: Job = {
          <br />
          <span className="mt-4 block">
             Deliver a new mobile app feature or product to the market within 3
-            months
+            months. Revamp with using latest Flutter technology
          </span>
       </>
    ),

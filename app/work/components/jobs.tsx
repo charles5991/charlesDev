@@ -14,7 +14,7 @@ import { cn } from "@/lib/utils"
 import { AnimatePresence, MotionProps, motion } from "framer-motion"
 import React from "react"
 
-const jobs: Job[] = [plaza, irace, firstpavilion, rakuten, haiya]
+const jobs: Job[] = [haiya, plaza, irace, firstpavilion, rakuten]
 
 export function Jobs() {
    return (
