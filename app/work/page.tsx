@@ -26,7 +26,7 @@ export default async function WorkPage() {
             </p>
             <button className="flex items-center justify-center gap-2 border border-opacity-[0.03] bg-neutral-200/50 px-3 filter backdrop-blur-xl dark:bg-neutral-900/75">
                <a
-                  href="/Charles_Chan_-Charles_Chan_-_Senior_Frontend_Developer.pdf"
+                  href="/cv.pdf"
                   download
                   className="flex items-center gap-2"
                >
