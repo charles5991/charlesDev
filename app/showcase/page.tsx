@@ -163,6 +163,46 @@ const showcase = () => {
                   </a>
                </div>
             </div>
+            <div className="my-4 grid h-full grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-4">
+               <div className="col-span-2 flex h-auto flex-col sm:col-span-1 md:col-span-2 md:h-full">
+                  <a
+                     href="https://jikan-web.vercel.app/"
+                     className="group relative flex flex-grow flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40"
+                     target="_blank"
+                     rel="noopener noreferrer"
+                  >
+                     <Image
+                        fill={true}
+                        src="/assets/jikan.png"
+                        alt=""
+                        className="absolute inset-0  object-cover transition-transform duration-500 ease-in-out group-hover:scale-105"
+                     />
+                     <div className="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
+                     <h3 className="text-md absolute left-0 top-0 z-10 p-4 font-medium text-white">
+                        Jikan API
+                     </h3>
+                  </a>
+               </div>
+               <div className="col-span-2 flex h-auto flex-col sm:col-span-1 md:col-span-2 md:h-full">
+                  <a
+                     href="https://crypto-tracker-test-gamma.vercel.app/"
+                     className="group relative flex flex-grow flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40"
+                     target="_blank"
+                     rel="noopener noreferrer"
+                  >
+                     <Image
+                        fill={true}
+                        src="/assets/cryptotrack.png"
+                        alt=""
+                        className="absolute inset-0 object-cover transition-transform duration-500 ease-in-out group-hover:scale-105"
+                     />
+                     <div className="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
+                     <h3 className="text-md absolute left-0 top-0 z-10 p-4 font-medium text-white">
+                        Crypto Tracker
+                     </h3>
+                  </a>
+               </div>
+            </div>
             <div className="my-4 grid h-full grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-8">
                <div className="col-span-2 flex h-auto flex-col sm:col-span-1 md:col-span-2 md:h-full">
                   <a
