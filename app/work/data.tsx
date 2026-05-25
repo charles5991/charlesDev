@@ -34,8 +34,8 @@ export const pixelate: Job = {
          <strong>• Premium Motion Design:</strong> Elevated player experience with fluid micro-interactions and transitions using <strong>Framer Motion</strong>.
       </span>
    ),
-   from: "2024",
-   to: "2025",
+   from: "2025",
+   to: "now",
 }
 
 export const haiya: Job = {
@@ -43,7 +43,7 @@ export const haiya: Job = {
    position: "RnD Engineer",
    introDescription: (
       <>
-         I`&apos;m currently working at{" "}
+         I worked at{" "}
          <a href="https://www.haiya.com.my/">Haiya Sdn Bhd</a>, a 
          technology company specializing in innovative solutions for the logistics industry.
          <br />
@@ -57,7 +57,7 @@ export const haiya: Job = {
       </>
    ),
    from: "2024",
-   to: "now",
+   to: "Dec 2025",
 }
 
 export const plaza: Job = {
