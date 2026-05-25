@@ -7,6 +7,37 @@ export type Job = {
    to: string
 }
 
+export const pixelate: Job = {
+   company: "Pixelate Everything",
+   position: "Frontend Lead",
+   introDescription: (
+      <>
+         Served as Frontend Lead at Pixelate Everything, architecting and scaling a high-throughput, white-label iGaming platform using a dual-framework frontend ecosystem.
+         <br />
+         <span className="mt-4 block">
+            Spearheaded migration of isolated applications into a unified, enterprise-grade architecture for global scale and real-time performance.
+         </span>
+      </>
+   ),
+   description: (
+      <span className="mt-4 block space-y-2">
+         <strong>• Multi-Tenant Monorepo:</strong> Engineered a scalable monorepo environment (<strong>Turborepo/Nx</strong>) managing shared UI packages and brand deployments, reducing code duplication by over 45%.
+         <br />
+         <strong>• Dual-Framework Micro-Frontends:</strong> Bridged modern <strong>Next.js (App Router)</strong> and React layouts with legacy/specialized <strong>Vue.js</strong> casino modules.
+         <br />
+         <strong>• High-Frequency WebSocket Engineering:</strong> Designed a resilient client-side WebSocket pipeline consuming rapid live-odds shifts and bet-slip updates at 60 FPS without UI jank.
+         <br />
+         <strong>• Dynamic Token-Based Theming:</strong> Developed a multi-theme configuration layout utilizing <strong>Ant Design’s ConfigProvider</strong> and native <strong>CSS variables</strong>.
+         <br />
+         <strong>• Global Localization & Timezone Engine:</strong> Built an abstract localization layer (<strong>i18n</strong>) featuring strict multi-timezone normalization via <strong>Day.js/date-fns-tz</strong>.
+         <br />
+         <strong>• Premium Motion Design:</strong> Elevated player experience with fluid micro-interactions and transitions using <strong>Framer Motion</strong>.
+      </span>
+   ),
+   from: "2024",
+   to: "2025",
+}
+
 export const haiya: Job = {
    company: "Haiya Sdn Bhd",
    position: "RnD Engineer",

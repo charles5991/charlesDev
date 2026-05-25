@@ -6,6 +6,7 @@ import {
    firstpavilion,
    rakuten,
    haiya,
+   pixelate,
    type Job,
 } from "@/app/work/data"
 import { defaultVariantsNoDelay } from "@/components/motion.variants"
@@ -14,7 +15,7 @@ import { cn } from "@/lib/utils"
 import { AnimatePresence, MotionProps, motion } from "framer-motion"
 import React from "react"
 
-const jobs: Job[] = [haiya, plaza, irace, firstpavilion, rakuten]
+const jobs: Job[] = [haiya, pixelate, plaza, irace, firstpavilion, rakuten]
 
 export function Jobs() {
    return (
