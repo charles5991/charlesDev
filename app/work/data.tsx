@@ -12,7 +12,9 @@ export const pixelate: Job = {
    position: "Frontend Lead",
    introDescription: (
       <>
-         Served as Frontend Lead at Pixelate Everything, architecting and scaling a high-throughput, white-label iGaming platform using a dual-framework frontend ecosystem.
+         Served as Frontend Lead at{" "}
+         <a href="https://pixelate-everything.com/">Pixelate Everything</a>,
+         architecting and scaling a high-throughput, white-label iGaming platform using a dual-framework frontend ecosystem.
          <br />
          <span className="mt-4 block">
             Spearheaded migration of isolated applications into a unified, enterprise-grade architecture for global scale and real-time performance.
