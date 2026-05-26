@@ -36,7 +36,7 @@ export const pixelate: Job = {
          <strong>• Premium Motion Design:</strong> Elevated player experience with fluid micro-interactions and transitions using <strong>Framer Motion</strong>.
       </span>
    ),
-   from: "2025",
+   from: "Jan 2026",
    to: "now",
 }
 
@@ -58,7 +58,7 @@ export const haiya: Job = {
          </span>
       </>
    ),
-   from: "2024",
+   from: "Oct 2024",
    to: "Dec 2025",
 }
 
@@ -67,20 +67,28 @@ export const plaza: Job = {
    position: "Frontend Developer",
    introDescription: (
       <>
-         I currently work at{" "}
+         Worked at{" "}
          <a href="https://www.plazapremiumlounge.com/en-uk">
-            Plaza Premium Lounge
+            Plaza Premium Group
          </a>
-         , where I help build and maintain our Angular application.
+         , where I helped build and maintain their Angular-based applications.
          <br />
          <span className="mt-4 block">
-            Deliver a new mobile app feature or product to the market within 3
-            months. Revamp with using latest Flutter technology
+            Focused on developing the rewards redeeming platform, Smart Traveller, and delivering key mobile features.
          </span>
       </>
    ),
-   from: "2023",
-   to: "2024",
+   description: (
+      <span className="mt-4 block space-y-2">
+         <strong>• Smart Traveller Platform:</strong> Contributed to the development and maintenance of the global airport rewards platform, <strong>Smart Traveller</strong>, built on Angular.
+         <br />
+         <strong>• Rapid Mobile App Delivery:</strong> Delivered new mobile app features and products to the market within a 3-month timeline.
+         <br />
+         <strong>• Flutter Technology Revamp:</strong> Revamped core features using the latest <strong>Flutter</strong> technology to optimize cross-platform performance.
+      </span>
+   ),
+   from: "Mar 2024",
+   to: "Oct 2024",
 }
 
 export const irace: Job = {

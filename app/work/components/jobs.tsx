@@ -37,7 +37,7 @@ export function Jobs() {
             className="mt-16 flex flex-col items-center"
          >
             {jobs.map((job, index) => (
-               <React.Fragment key={job.company}>
+               <React.Fragment key={`${job.company}-${job.from}`}>
                   {index !== 0 && (
                      <motion.div
                         variants={{
