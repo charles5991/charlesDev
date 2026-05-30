@@ -11,12 +11,15 @@ import {
 import { cn } from "@/lib/utils"
 import { Menu } from "lucide-react"
 import Link from "next/link"
+import { useLocale } from "@/contexts/locale-context"
 
 type MobileNavigationProps = {
    navItems: NavItem[]
 }
 
 export function MobileNavigation({ navItems }: MobileNavigationProps) {
+   const { locale } = useLocale()
+
    return (
       <DropdownMenu>
          <DropdownMenuTrigger asChild className="m-0" aria-label="Menu">
@@ -42,7 +45,9 @@ export function MobileNavigation({ navItems }: MobileNavigationProps) {
                         <span className="">{item.icon}</span>
                         <span className="text-xl">
                            <span className="mr-px text-neutral-400">/</span>
-                           {item.name.toLowerCase()}
+                           {locale === "zh" && item.nameZh
+                              ? item.nameZh
+                              : item.name.toLowerCase()}
                         </span>
                         {/* {isActive && (
                         <motion.span

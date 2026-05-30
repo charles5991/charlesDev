@@ -5,6 +5,7 @@ import { type NavItem } from "@/components/layouts/header"
 import { LocaleToggle } from "@/components/locale-toggle"
 import { MobileNavigation } from "@/components/mobile-navigation"
 import { ThemeToggle } from "@/components/theme-toggle"
+import { useLocale } from "@/contexts/locale-context"
 import { cn } from "@/lib/utils"
 import { motion } from "framer-motion"
 import Link from "next/link"
@@ -18,6 +19,7 @@ export const FloatingNav = ({
    className?: string
 }) => {
    const pathname = usePathname()
+   const { locale } = useLocale()
 
    return (
       <motion.div
@@ -59,7 +61,9 @@ export const FloatingNav = ({
                         }}
                      >
                         <span className="mr-px text-neutral-400">/</span>
-                        {navItem.name.toLowerCase()}
+                        {locale === "zh" && navItem.nameZh
+                           ? navItem.nameZh
+                           : navItem.name.toLowerCase()}
                      </span>
 
                      {isActive && (

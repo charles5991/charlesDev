@@ -8,6 +8,7 @@ import { cn } from "@/lib/utils"
 import { motion } from "framer-motion"
 import * as React from "react"
 import { useFormState } from "react-dom"
+import { useLocale } from "@/contexts/locale-context"
 
 const initialState = {
    success: false,
@@ -17,6 +18,7 @@ const initialState = {
 export default function Form() {
    const ref = React.useRef<HTMLFormElement>(null)
    const [state, action] = useFormState(formAction, initialState)
+   const { t } = useLocale()
 
    async function formAction(_prevState: unknown, formData: FormData) {
       const res = await saveGuestbookEntry(formData)
@@ -39,7 +41,7 @@ export default function Form() {
                   "border-red-300": !state.success && state.message,
                })}
             />
-            <Button type="submit">sign</Button>
+            <Button type="submit">{t("sign", "留言")}</Button>
          </form>
 
          {state.message && (
