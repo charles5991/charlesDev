@@ -2,6 +2,7 @@ import { type Locale } from "@/contexts/locale-context"
 
 export type Job = {
    company: string
+   companyZh?: string
    position: string
    positionZh?: string
    introDescription: React.ReactNode
@@ -9,7 +10,9 @@ export type Job = {
    description?: React.ReactNode
    descriptionZh?: React.ReactNode
    from: string
+   fromZh?: string
    to: string
+   toZh?: string
 }
 
 export function getJobField<T>(
@@ -79,7 +82,9 @@ export const pixelate: Job = {
       </span>
    ),
    from: "Jan 2026",
+   fromZh: "2026年1月",
    to: "now",
+   toZh: "至今",
 }
 
 export const haiya: Job = {
@@ -112,7 +117,9 @@ export const haiya: Job = {
       </>
    ),
    from: "Oct 2024",
+   fromZh: "2024年10月",
    to: "Dec 2025",
+   toZh: "2025年12月",
 }
 
 export const plaza: Job = {
@@ -164,7 +171,9 @@ export const plaza: Job = {
       </span>
    ),
    from: "Mar 2024",
+   fromZh: "2024年3月",
    to: "Oct 2024",
+   toZh: "2024年10月",
 }
 
 export const irace: Job = {
@@ -194,7 +203,9 @@ export const irace: Job = {
       </>
    ),
    from: "2023",
+   fromZh: "2023年",
    to: "2023",
+   toZh: "2023年",
 }
 
 export const firstpavilion: Job = {
@@ -229,7 +240,9 @@ export const firstpavilion: Job = {
       </>
    ),
    from: "2022",
+   fromZh: "2022年",
    to: "2023",
+   toZh: "2023年",
 }
 
 export const rakuten: Job = {
@@ -261,5 +274,7 @@ export const rakuten: Job = {
       </>
    ),
    from: "2018",
+   fromZh: "2018年",
    to: "2021",
+   toZh: "2021年",
 }

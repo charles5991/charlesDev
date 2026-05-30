@@ -9,6 +9,7 @@ export function LocaleToggle() {
 
    return (
       <button
+         type="button"
          onClick={() => setLocale(isZh ? "en" : "zh")}
          aria-label="Toggle language"
          className="relative flex h-8 items-center gap-0.5 rounded-full border border-neutral-200 bg-neutral-100/60 px-1 text-xs font-medium dark:border-white/10 dark:bg-neutral-800/60"

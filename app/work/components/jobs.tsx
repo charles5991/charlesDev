@@ -77,7 +77,10 @@ export function JobCard({ job, locale, ...props }: JobCardProps) {
    const [open, setOpen] = React.useState(false)
    const currentJob = job.to === "now"
 
+   const company = getJobField(job, "company", locale) as string
    const position = getJobField(job, "position", locale) as string
+   const from = getJobField(job, "from", locale) as string
+   const to = getJobField(job, "to", locale) as string
    const introDescription = getJobField(job, "introDescription", locale)
    const description = getJobField(job, "description", locale)
 
@@ -93,9 +96,9 @@ export function JobCard({ job, locale, ...props }: JobCardProps) {
          )}
       >
          <h2 className="m-0 mb-1 flex justify-between text-xl font-normal dark:text-white">
-            {job.company}{" "}
+            {company}{" "}
             <span className="text-sm text-neutral-500 dark:text-neutral-400">
-               {job.from} — {job.to}
+               {from} — {to}
             </span>
          </h2>
          <p className="m-0 text-sm text-neutral-500 dark:text-neutral-400">
