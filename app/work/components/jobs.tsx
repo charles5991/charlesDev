@@ -7,8 +7,10 @@ import {
    rakuten,
    haiya,
    pixelate,
+   getJobField,
    type Job,
 } from "@/app/work/data"
+import { type Locale } from "@/contexts/locale-context"
 import { defaultVariantsNoDelay } from "@/components/motion.variants"
 import { Button } from "@/components/ui/button"
 import { cn } from "@/lib/utils"
@@ -17,7 +19,11 @@ import React from "react"
 
 const jobs: Job[] = [pixelate, haiya, plaza, irace, firstpavilion, rakuten]
 
-export function Jobs() {
+type JobsProps = {
+   locale: Locale
+}
+
+export function Jobs({ locale }: JobsProps) {
    return (
       <AnimatePresence>
          <motion.div
@@ -54,7 +60,7 @@ export function Jobs() {
                         className="z-[-1] mt-[9px] h-6 w-px origin-top bg-neutral-200 dark:bg-neutral-500/20"
                      />
                   )}
-                  <JobCard job={job} />
+                  <JobCard job={job} locale={locale} />
                </React.Fragment>
             ))}
          </motion.div>
@@ -64,10 +70,17 @@ export function Jobs() {
 
 type JobCardProps = {
    job: Job
+   locale: Locale
 } & MotionProps
-export function JobCard({ job, ...props }: JobCardProps) {
+
+export function JobCard({ job, locale, ...props }: JobCardProps) {
    const [open, setOpen] = React.useState(false)
    const currentJob = job.to === "now"
+
+   const position = getJobField(job, "position", locale) as string
+   const introDescription = getJobField(job, "introDescription", locale)
+   const description = getJobField(job, "description", locale)
+
    return (
       <motion.div
          variants={defaultVariantsNoDelay}
@@ -86,17 +99,17 @@ export function JobCard({ job, ...props }: JobCardProps) {
             </span>
          </h2>
          <p className="m-0 text-sm text-neutral-500 dark:text-neutral-400">
-            {job.position}
+            {position}
          </p>
-         <p className="mb-0 mt-4">{job.introDescription}</p>
+         <p className="mb-0 mt-4">{introDescription}</p>
 
-         {!open && job.description && (
+         {!open && description && (
             <Button
                className="self-center"
                variant="ghost"
                onClick={() => setOpen(true)}
             >
-               Show more
+               {locale === "zh" ? "展开详情" : "Show more"}
             </Button>
          )}
 
@@ -105,7 +118,7 @@ export function JobCard({ job, ...props }: JobCardProps) {
                block: open,
             })}
          >
-            {job.description}
+            {description}
          </p>
       </motion.div>
    )

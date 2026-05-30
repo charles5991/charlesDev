@@ -2,6 +2,7 @@
 
 import * as React from "react"
 import { type NavItem } from "@/components/layouts/header"
+import { LocaleToggle } from "@/components/locale-toggle"
 import { MobileNavigation } from "@/components/mobile-navigation"
 import { ThemeToggle } from "@/components/theme-toggle"
 import { cn } from "@/lib/utils"
@@ -89,7 +90,10 @@ export const FloatingNav = ({
             <MobileNavigation navItems={navItems} />
          </div>
 
-         <ThemeToggle />
+         <div className="flex items-center gap-1">
+            <LocaleToggle />
+            <ThemeToggle />
+         </div>
       </motion.div>
    )
 }
