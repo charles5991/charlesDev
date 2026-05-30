@@ -44,7 +44,7 @@ export default function WorkPage() {
                   "了解更多关于我的工作经历、专注领域以及我目前正在做的事情。",
                )}
             </p>
-            <div className="flex gap-2">
+            <div className="flex flex-wrap gap-2">
                <button className="flex items-center justify-center gap-2 border border-opacity-[0.03] bg-neutral-200/50 px-3 filter backdrop-blur-xl dark:bg-neutral-900/75">
                   <a
                      href="/cv.pdf"
@@ -61,7 +61,17 @@ export default function WorkPage() {
                      download
                      className="flex items-center gap-2"
                   >
-                     <Text>{t("Chinese Resume", "中文简历")}</Text>
+                     <Text>{t("Traditional Chinese", "繁体简历")}</Text>
+                     <DownloadIcon />
+                  </a>
+               </button>
+               <button className="flex items-center justify-center gap-2 border border-opacity-[0.03] bg-neutral-200/50 px-3 filter backdrop-blur-xl dark:bg-neutral-900/75">
+                  <a
+                     href="/cv_cn2.pdf"
+                     download
+                     className="flex items-center gap-2"
+                  >
+                     <Text>{t("Simplified Chinese", "简体简历")}</Text>
                      <DownloadIcon />
                   </a>
                </button>
