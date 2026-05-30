@@ -56,7 +56,7 @@ export const pixelate: Job = {
          <br />
          <strong>• High-Frequency WebSocket Engineering:</strong> Designed a resilient client-side WebSocket pipeline consuming rapid live-odds shifts and bet-slip updates at 60 FPS without UI jank.
          <br />
-         <strong>• Dynamic Token-Based Theming:</strong> Developed a multi-theme configuration layout utilizing <strong>Ant Design's ConfigProvider</strong> and native <strong>CSS variables</strong>.
+         <strong>• Dynamic Token-Based Theming:</strong> Developed a multi-theme configuration layout utilizing <strong>Ant Design&apos;s ConfigProvider</strong> and native <strong>CSS variables</strong>.
          <br />
          <strong>• Global Localization &amp; Timezone Engine:</strong> Built an abstract localization layer (<strong>i18n</strong>) featuring strict multi-timezone normalization via <strong>Day.js/date-fns-tz</strong>.
          <br />
