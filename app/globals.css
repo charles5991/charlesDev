@@ -70,6 +70,7 @@
    * {
       @apply border-border;
    }
+
    body {
       @apply bg-background text-foreground;
    }
@@ -112,6 +113,29 @@
    content: "#";
 }
 
-.prose *:hover > .anchor {
+.prose *:hover>.anchor {
    @apply visible;
+}
+
+/* Showcase mosaic album grid */
+.showcase-grid {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   grid-auto-rows: 44vw;
+   grid-auto-flow: dense;
+   gap: 2px;
+}
+
+@media (min-width: 640px) {
+   .showcase-grid {
+      grid-template-columns: repeat(3, 1fr);
+      grid-auto-rows: 28vw;
+   }
+}
+
+@media (min-width: 768px) {
+   .showcase-grid {
+      grid-template-columns: repeat(4, 1fr);
+      grid-auto-rows: clamp(100px, 16vw, 200px);
+   }
 }

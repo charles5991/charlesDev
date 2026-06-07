@@ -2,306 +2,188 @@
 
 import Image from "next/image"
 
+interface Project {
+   title: string
+   src: string
+   href: string
+   category: string
+   colSpan: number
+   rowSpan: number
+}
+
+const projects: Project[] = [
+   {
+      title: "Hilton Solana Casino App",
+      category: "Personal / Web3 / iGaming",
+      src: "/assets/casino.png",
+      href: "https://hilton-casino.vercel.app/",
+      colSpan: 2,
+      rowSpan: 2,
+   },
+   {
+      title: "Mall ThreeJs",
+      category: "Three.js / Experiment",
+      src: "/assets/mall.png",
+      href: "https://charles-r3-f-orbit-test.vercel.app/",
+      colSpan: 1,
+      rowSpan: 1,
+   },
+   {
+      title: "Weather App",
+      category: "Web App / Parallax",
+      src: "/assets/weather.png",
+      href: "https://weather-pallarax.vercel.app/",
+      colSpan: 1,
+      rowSpan: 1,
+   },
+   {
+      title: "Charles Atmosphere",
+      category: "Three.js / Interactive",
+      src: "/assets/plane.png",
+      href: "https://charles-atmosphere.vercel.app/",
+      colSpan: 1,
+      rowSpan: 2,
+   },
+   {
+      title: "Apple Clone",
+      category: "Vanilla JS / Parallax",
+      src: "/assets/iphone.png",
+      href: "https://apple-clone-parallax.vercel.app/",
+      colSpan: 2,
+      rowSpan: 1,
+   },
+   {
+      title: "Blackhole ThreeJs",
+      category: "Three.js / Visuals",
+      src: "/assets/blackhole.png",
+      href: "https://blackhole-phi.vercel.app/",
+      colSpan: 1,
+      rowSpan: 1,
+   },
+   {
+      title: "Emperor Royal SG Website",
+      category: "iGaming / Web",
+      src: "/assets/emperor.png",
+      href: "https://emperor-royal.vercel.app/",
+      colSpan: 1,
+      rowSpan: 1,
+   },
+   {
+      title: "Cleverly ROAS",
+      category: "SaaS / Web App",
+      src: "/assets/roas.png",
+      href: "https://cleverly-web.vercel.app/projects",
+      colSpan: 2,
+      rowSpan: 1,
+   },
+   {
+      title: "Jikan API",
+      category: "API Integration / Web",
+      src: "/assets/jikan.png",
+      href: "https://jikan-web.vercel.app/",
+      colSpan: 1,
+      rowSpan: 1,
+   },
+   {
+      title: "Crypto Tracker",
+      category: "Web App / FinTech",
+      src: "/assets/cryptotrack.png",
+      href: "https://crypto-tracker-test-gamma.vercel.app/",
+      colSpan: 1,
+      rowSpan: 1,
+   },
+   {
+      title: "Daidailife Bitfinex Lending Bot",
+      category: "FinTech / Automation",
+      src: "/assets/daidai.png",
+      href: "https://user.daidai.life/trading-bot",
+      colSpan: 1,
+      rowSpan: 1,
+   },
+   {
+      title: "BC Multi-Tenant Project",
+      category: "iGaming / Multi-Tenant",
+      src: "/assets/nexo168.png",
+      href: "https://nexo168.com",
+      colSpan: 2,
+      rowSpan: 2,
+   },
+   {
+      title: "Ocean ThreeJs",
+      category: "Three.js / Interactive",
+      src: "/assets/ocean.png",
+      href: "https://ocean-r3-fiber.vercel.app/",
+      colSpan: 1,
+      rowSpan: 1,
+   },
+   {
+      title: "Gameboy ThreeJs",
+      category: "Three.js / Nostalgia",
+      src: "/assets/gameboy.png",
+      href: "https://childhood-gameboy.vercel.app/",
+      colSpan: 1,
+      rowSpan: 1,
+   },
+   {
+      title: "Sourceflow",
+      category: "Freelance / Web",
+      src: "/assets/sourceflow.png",
+      href: "https://sourceflow-test.vercel.app/",
+      colSpan: 1,
+      rowSpan: 1,
+   },
+   {
+      title: "Austin Website",
+      category: "Freelance / Web",
+      src: "/assets/austin.png",
+      href: "https://austinsourceflow.vercel.app/",
+      colSpan: 2,
+      rowSpan: 1,
+   },
+   {
+      title: "Infinitown (Mock)",
+      category: "Interactive / Web",
+      src: "/assets/town.png",
+      href: "https://charles-infinitownmock.netlify.app/",
+      colSpan: 1,
+      rowSpan: 2,
+   },
+]
+
 const showcase = () => {
    return (
       <section>
-         <div className="mx-auto max-w-screen-xl px-2 py-4 sm:py-4 lg:px-6">
-            <div className="my-4 grid h-full grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-1">
-               <div className="col-span-2 flex h-auto flex-col sm:col-span-1 md:col-span-2 md:h-full">
-                  <a
-                     href="https://hilton-casino.vercel.app/"
-                     className="group relative flex flex-grow flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40"
-                     target="_blank"
-                     rel="noopener noreferrer"
-                  >
-                     <Image
-                        fill={true}
-                        src="/assets/casino.png"
-                        alt=""
-                        className="absolute inset-0  object-cover transition-transform duration-500 ease-in-out group-hover:scale-105"
-                     />
-                     <div className="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
-                     <h3 className="text-md absolute left-0 top-0 z-10 p-4 font-medium text-white">
-                        Hilton Solana Casino App (Personal)
-                     </h3>
-                  </a>
-               </div>
-            </div>
-
-            <div className="my-4 grid h-full grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-4">
-               <div className="col-span-2 flex h-auto flex-col sm:col-span-1 md:col-span-2 md:h-full">
-                  <a
-                     href="https://charles-r3-f-orbit-test.vercel.app/"
-                     className="group relative flex flex-grow flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40"
-                     target="_blank"
-                     rel="noopener noreferrer"
-                  >
-                     <Image
-                        fill={true}
-                        src="/assets/mall.png"
-                        alt=""
-                        className="absolute inset-0  object-cover transition-transform duration-500 ease-in-out group-hover:scale-105"
-                     />
-                     <div className="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
-                     <h3 className="text-md absolute left-0 top-0 z-10 p-4 font-medium text-white">
-                        Mall ThreeJs
-                     </h3>
-                  </a>
-               </div>
-               <div className="col-span-2 flex h-auto flex-col sm:col-span-1 md:col-span-2 md:h-full">
-                  <a
-                     href="https://weather-pallarax.vercel.app/"
-                     className="group relative flex flex-grow flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40"
-                     target="_blank"
-                     rel="noopener noreferrer"
-                  >
-                     <Image
-                        fill={true}
-                        src="/assets/weather.png"
-                        alt=""
-                        className="absolute inset-0 object-cover transition-transform duration-500 ease-in-out group-hover:scale-105"
-                     />
-                     <div className="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
-                     <h3 className="text-md absolute left-0 top-0 z-10 p-4 font-medium text-white">
-                        Weather App
-                     </h3>
-                  </a>
-               </div>
-            </div>
-            <div className="grid h-full grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-5">
-               <div className="col-span-2 flex h-auto flex-col sm:col-span-1 md:col-span-2 md:h-full">
-                  <a
-                     href="https://charles-atmosphere.vercel.app/"
-                     className="group relative flex flex-grow flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40"
-                     target="_blank"
-                     rel="noopener noreferrer"
-                  >
-                     <Image
-                        fill={true}
-                        src="/assets/plane.png"
-                        alt=""
-                        className="absolute inset-0  object-cover transition-transform duration-500 ease-in-out group-hover:scale-105"
-                     />
-                     <div className="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
-                     <h3 className="text-md absolute left-0 top-0 z-10 p-4 font-medium text-white">
-                        Charles Atmosphere
-                     </h3>
-                  </a>
-               </div>
-               <div className="col-span-2 sm:col-span-1 md:col-span-2">
-                  <a
-                     href="https://apple-clone-parallax.vercel.app/"
-                     className="group relative mb-4 flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40"
-                     target="_blank"
-                     rel="noopener noreferrer"
-                  >
-                     <Image
-                        fill={true}
-                        src="/assets/iphone.png"
-                        alt=""
-                        className="absolute inset-0  object-cover transition-transform duration-500 ease-in-out group-hover:scale-105"
-                     />
-                     <div className="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
-                     <p className=" text-md absolute left-0 top-0 z-10 p-4 font-medium text-white">
-                        Apple clone
+         <div className="showcase-grid">
+            {projects.map((project, index) => (
+               <a
+                  key={index}
+                  href={project.href}
+                  className="group relative overflow-hidden"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{
+                     gridColumn: `span ${Math.min(project.colSpan, 2)}`,
+                     gridRow: `span ${project.rowSpan}`,
+                  }}
+               >
+                  <Image
+                     fill={true}
+                     src={project.src}
+                     alt={project.title}
+                     className="object-cover transition-transform duration-500 ease-in-out group-hover:scale-110"
+                     sizes="(max-width: 640px) 50vw, (max-width: 768px) 33vw, 25vw"
+                  />
+                  {/* Hover overlay */}
+                  <div className="absolute inset-0 flex flex-col justify-end bg-black/0 p-2 opacity-0 transition-all duration-300 group-hover:bg-black/60 group-hover:opacity-100 md:p-3">
+                     <p className="translate-y-2 text-xs font-semibold leading-tight text-white transition-transform duration-300 group-hover:translate-y-0 md:text-sm">
+                        {project.title}
                      </p>
-                  </a>
-                  <div className="grid grid-cols-2 gap-4 sm:grid-cols-2 lg:grid-cols-2">
-                     <a
-                        href="https://blackhole-phi.vercel.app/"
-                        className="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                     >
-                        <Image
-                           fill={true}
-                           src="/assets/blackhole.png"
-                           alt=""
-                           className="absolute inset-0  object-cover transition-transform duration-500 ease-in-out group-hover:scale-105"
-                        />
-                        <div className="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
-                        <h3 className="  text-md absolute left-0 top-0 z-10 p-4 font-medium text-white  ">
-                           Blackhole ThreeJs
-                        </h3>
-                     </a>
-                     <a
-                        href="https://emperor-royal.vercel.app/"
-                        className="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                     >
-                        <Image
-                           fill={true}
-                           src="/assets/emperor.png"
-                           alt=""
-                           className="absolute inset-0  object-cover transition-transform duration-500 ease-in-out group-hover:scale-105"
-                        />
-                        <div className="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
-                        <h3 className="  text-md absolute left-0 top-0 z-10 p-4 font-medium text-white  ">
-                           Emperor Royal SG Website
-                        </h3>
-                     </a>
+                     <p className="translate-y-2 text-[9px] text-white/70 transition-transform duration-300 group-hover:translate-y-0 md:text-[11px]">
+                        {project.category}
+                     </p>
                   </div>
-               </div>
-               <div className="col-span-2 flex h-auto flex-col  sm:col-span-1 md:col-span-1 md:h-full">
-                  <a
-                     href="https://cleverly-web.vercel.app/projects"
-                     className="group relative flex flex-grow flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40"
-                     target="_blank"
-                     rel="noopener noreferrer"
-                  >
-                     <Image
-                        fill={true}
-                        src="/assets/roas.png"
-                        alt=""
-                        className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-105"
-                     />
-                     <div className="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
-                     <h3 className="  text-md absolute left-0 top-0 z-10 p-4 font-medium text-white  ">
-                        Cleverly ROAS
-                     </h3>
-                  </a>
-               </div>
-            </div>
-            <div className="my-4 grid h-full grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-4">
-               <div className="col-span-2 flex h-auto flex-col sm:col-span-1 md:col-span-2 md:h-full">
-                  <a
-                     href="https://jikan-web.vercel.app/"
-                     className="group relative flex flex-grow flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40"
-                     target="_blank"
-                     rel="noopener noreferrer"
-                  >
-                     <Image
-                        fill={true}
-                        src="/assets/jikan.png"
-                        alt=""
-                        className="absolute inset-0  object-cover transition-transform duration-500 ease-in-out group-hover:scale-105"
-                     />
-                     <div className="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
-                     <h3 className="text-md absolute left-0 top-0 z-10 p-4 font-medium text-white">
-                        Jikan API
-                     </h3>
-                  </a>
-               </div>
-               <div className="col-span-2 flex h-auto flex-col sm:col-span-1 md:col-span-2 md:h-full">
-                  <a
-                     href="https://crypto-tracker-test-gamma.vercel.app/"
-                     className="group relative flex flex-grow flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40"
-                     target="_blank"
-                     rel="noopener noreferrer"
-                  >
-                     <Image
-                        fill={true}
-                        src="/assets/cryptotrack.png"
-                        alt=""
-                        className="absolute inset-0 object-cover transition-transform duration-500 ease-in-out group-hover:scale-105"
-                     />
-                     <div className="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
-                     <h3 className="text-md absolute left-0 top-0 z-10 p-4 font-medium text-white">
-                        Crypto Tracker
-                     </h3>
-                  </a>
-               </div>
-            </div>
-            <div className="my-4 grid h-full grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-8">
-               <div className="col-span-2 flex h-auto flex-col sm:col-span-1 md:col-span-2 md:h-full">
-                  <a
-                     href="https://ocean-r3-fiber.vercel.app/"
-                     className="group relative flex flex-grow flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40"
-                     target="_blank"
-                     rel="noopener noreferrer"
-                  >
-                     <Image
-                        fill={true}
-                        src="/assets/ocean.png"
-                        alt=""
-                        className="absolute inset-0  object-cover transition-transform duration-500 ease-in-out group-hover:scale-105"
-                     />
-                     <div className="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
-                     <h3 className="text-md absolute left-0 top-0 z-10 p-4 font-medium text-white">
-                        Ocean ThreeJs
-                     </h3>
-                  </a>
-               </div>
-               <div className="col-span-2 flex h-auto flex-col sm:col-span-1 md:col-span-2 md:h-full">
-                  <a
-                     href="https://childhood-gameboy.vercel.app/"
-                     className="group relative flex flex-grow flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40"
-                     target="_blank"
-                     rel="noopener noreferrer"
-                  >
-                     <Image
-                        fill={true}
-                        src="/assets/gameboy.png"
-                        alt=""
-                        className="absolute inset-0  object-cover transition-transform duration-500 ease-in-out group-hover:scale-105"
-                     />
-                     <div className="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
-                     <h3 className="text-md absolute left-0 top-0 z-10 p-4 font-medium text-white">
-                        Gameboy ThreeJs
-                     </h3>
-                  </a>
-               </div>
-               <div className="col-span-2 flex h-auto flex-col sm:col-span-1 md:col-span-2 md:h-full">
-                  <a
-                     href="https://sourceflow-test.vercel.app/"
-                     className="group relative flex flex-grow flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40"
-                     target="_blank"
-                     rel="noopener noreferrer"
-                  >
-                     <Image
-                        fill={true}
-                        src="/assets/sourceflow.png"
-                        alt=""
-                        className="absolute inset-0  object-cover transition-transform duration-500 ease-in-out group-hover:scale-105"
-                     />
-                     <div className="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
-                     <h3 className="text-md absolute left-0 top-0 z-10 p-4 font-medium text-white">
-                        Sourceflow (freelance)
-                     </h3>
-                  </a>
-               </div>
-               <div className="col-span-2 flex h-auto flex-col sm:col-span-1 md:col-span-2 md:h-full">
-                  <a
-                     href="https://austinsourceflow.vercel.app/"
-                     className="group relative flex flex-grow flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40"
-                     target="_blank"
-                     rel="noopener noreferrer"
-                  >
-                     <Image
-                        fill={true}
-                        src="/assets/austin.png"
-                        alt=""
-                        className="absolute inset-0  object-cover transition-transform duration-500 ease-in-out group-hover:scale-105"
-                     />
-                     <div className="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
-                     <h3 className="text-md absolute left-0 top-0 z-10 p-4 font-medium text-white">
-                        Austin website (freelance)
-                     </h3>
-                  </a>
-               </div>
-            </div>
-            <div className="my-4 grid h-full grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-1">
-               <div className="col-span-2 flex h-auto flex-col sm:col-span-1 md:col-span-2 md:h-full">
-                  <a
-                     href="https://charles-infinitownmock.netlify.app/"
-                     className="group relative flex flex-grow flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40"
-                     target="_blank"
-                     rel="noopener noreferrer"
-                  >
-                     <Image
-                        fill={true}
-                        src="/assets/town.png"
-                        alt=""
-                        className="absolute inset-0  object-cover transition-transform duration-500 ease-in-out group-hover:scale-105"
-                     />
-                     <div className="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
-                     <h3 className="text-md absolute left-0 top-0 z-10 p-4 font-medium text-white">
-                        Infinitown (Mock)
-                     </h3>
-                  </a>
-               </div>
-            </div>
+               </a>
+            ))}
          </div>
       </section>
    )

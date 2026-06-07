@@ -87,13 +87,13 @@ export function LocationCard() {
       <motion.div
          variants={defaultVariantsNoDelay}
          whileHover={{ scale: 1.05 }}
-         className="card-border relative col-span-4 col-start-5 row-span-3 row-start-2 flex flex-col gap-6 overflow-hidden rounded-xl bg-white p-4 dark:bg-neutral-900 md:col-span-2 md:col-start-6 md:row-span-2 md:row-start-2 md:h-40"
+         className="card-border relative col-span-4 col-start-5 row-span-3 row-start-2 flex flex-col gap-6 overflow-hidden rounded-xl bg-white p-4 dark:bg-neutral-900 md:col-span-3 md:col-start-6 md:row-span-2 md:row-start-2 md:h-40"
       >
          <div className="z-10 flex items-center gap-2">
             <Globe className="size-[18px]" />
             <h2 className="text-sm font-light">Malaysia, KL</h2>
          </div>
-         <div className="absolute inset-x-0 bottom-[-75%] mx-auto aspect-square h-[150%] translate-x-[-12.5%] [@media(max-width:420px)]:h-[320px]">
+         <div className="absolute inset-x-0 bottom-[-40%] mx-auto aspect-square h-[150%] translate-x-[-12.5%] [@media(max-width:420px)]:h-[320px]">
             <div
                style={{
                   width: "100%",

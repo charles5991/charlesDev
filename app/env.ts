@@ -26,4 +26,5 @@ export const env = createEnv({
       NEXTAUTH_URL: process.env.NEXTAUTH_URL,
       NEXTAUTH_SECRET: process.env.NEXTAUTH_SECRET,
    } as Record<string, string | undefined>,
+   skipValidation: !!process.env.SKIP_ENV_VALIDATION || process.env.NODE_ENV === "development",
 })
