@@ -9,7 +9,7 @@ export function MeCard() {
       <motion.div
          variants={defaultVariantsNoDelay}
          whileHover={{ scale: 1.05 }}
-         className="card-border relative col-span-4 row-span-3 overflow-hidden rounded-xl md:col-span-2 md:row-span-3"
+         className="card-border relative col-span-3 row-span-3 overflow-hidden rounded-xl md:col-span-2 md:row-span-3"
       >
          <Image
             alt="Charles Chan"

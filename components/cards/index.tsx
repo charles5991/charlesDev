@@ -22,7 +22,7 @@ export async function Cards() {
             },
          }}
       >
-         <section className="mt-8 grid grid-cols-8 grid-rows-5 gap-4 md:grid-cols-8 md:grid-rows-3">
+         <section className="mt-8 grid grid-cols-6 gap-4 md:grid-cols-8 md:grid-rows-3">
             <MeCard />
             <GithubStatsCard
                followers={followers}

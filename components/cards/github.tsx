@@ -24,7 +24,7 @@ export function GithubStatsCard({
          target="_blank"
          variants={defaultVariantsNoDelay}
          whileHover={{ scale: 1.05 }}
-         className="card-border relative col-span-4 row-span-2 overflow-hidden rounded-xl bg-white p-4 dark:bg-neutral-900 md:col-span-3 md:col-start-3 md:row-span-2 md:row-start-1"
+         className="card-border relative col-span-6 row-span-2 overflow-hidden rounded-xl bg-white p-4 dark:bg-neutral-900 md:col-span-3 md:col-start-3 md:row-span-2 md:row-start-1"
       >
          <div className="relative z-10 flex h-full flex-col justify-between gap-2">
             <div className="flex items-center gap-2">

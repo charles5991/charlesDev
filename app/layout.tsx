@@ -50,7 +50,7 @@ export default function RootLayout({
    children: React.ReactNode
 }>) {
    return (
-      <html lang="en">
+      <html lang="en" suppressHydrationWarning>
          <body
             className={cn(
                "bg-neutral-100 text-neutral-700 dark:bg-neutral-950 dark:text-neutral-300",

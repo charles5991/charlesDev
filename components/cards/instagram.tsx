@@ -14,7 +14,7 @@ export function InstagramCard() {
          title="Instagram profile"
          variants={defaultVariantsNoDelay}
          whileHover={{ scale: 1.05 }}
-         className="card-border relative col-span-2 row-span-1 flex items-center justify-center gap-x-2 overflow-hidden rounded-xl text-white md:col-span-1 md:col-start-5 md:row-span-1 md:row-start-3"
+         className="card-border relative col-span-2 row-span-1 flex aspect-[2/1] items-center justify-center gap-x-2 overflow-hidden rounded-xl text-white md:aspect-auto md:col-span-1 md:col-start-5 md:row-span-1 md:row-start-3"
          style={{
             background:
                "linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%)",
