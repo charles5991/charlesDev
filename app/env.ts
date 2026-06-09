@@ -13,6 +13,8 @@ export const env = createEnv({
       RESEND_API_KEY: z.string(),
       NEXTAUTH_URL: z.string(),
       NEXTAUTH_SECRET: z.string(),
+      AUTH_GOOGLE_ID: z.string().optional(),
+      AUTH_GOOGLE_SECRET: z.string().optional(),
    },
    experimental__runtimeEnv: {
       GITHUB_TOKEN: process.env.GITHUB_TOKEN,
@@ -25,6 +27,8 @@ export const env = createEnv({
       RESEND_API_KEY: process.env.RESEND_API_KEY,
       NEXTAUTH_URL: process.env.NEXTAUTH_URL,
       NEXTAUTH_SECRET: process.env.NEXTAUTH_SECRET,
+      AUTH_GOOGLE_ID: process.env.AUTH_GOOGLE_ID,
+      AUTH_GOOGLE_SECRET: process.env.AUTH_GOOGLE_SECRET,
    } as Record<string, string | undefined>,
    skipValidation: !!process.env.SKIP_ENV_VALIDATION || process.env.NODE_ENV === "development",
 })
