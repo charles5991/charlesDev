@@ -12,10 +12,11 @@ export const metadata = {
 }
 
 export default async function GuestbookPage() {
-   const session = await auth()
+   const [session, entries] = await Promise.all([
+      auth(),
+      getGuestbookEntries(),
+   ])
    const isLoggedIn = !!session?.user?.email
-
-   const entries = await getGuestbookEntries()
 
    return (
       <section>
