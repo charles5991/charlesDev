@@ -48,6 +48,7 @@ export const FloatingNav = ({
                   <Link
                      key={`link=${idx}`}
                      href={navItem.link}
+                     prefetch={navItem.link === "/guestbook" ? true : undefined}
                      className={cn(
                         "relative flex h-8 items-center px-4 text-neutral-600 hover:text-neutral-500 dark:text-neutral-50 dark:hover:text-neutral-300",
                      )}
