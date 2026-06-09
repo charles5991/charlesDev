@@ -13,6 +13,14 @@ interface Project {
 
 const projects: Project[] = [
    {
+      title: "Mystical Forest Slot",
+      category: "PixiJS / Game Dev / iGaming",
+      src: "/assets/forest.png",
+      href: "https://mystical-forest-slot.vercel.app/",
+      colSpan: 2,
+      rowSpan: 2,
+   },
+   {
       title: "Hilton Solana Casino App",
       category: "Personal / Web3 / iGaming",
       src: "/assets/casino.png",
