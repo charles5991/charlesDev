@@ -220,11 +220,10 @@ Charles Chan
                <button
                   onClick={handleSend}
                   disabled={sending || sent}
-                  className={`flex flex-1 items-center justify-center gap-2 rounded-xl px-4 py-2 text-sm font-bold text-white transition-all ${
-                     sent
-                        ? "bg-emerald-500"
-                        : "bg-neutral-900 hover:bg-neutral-700 dark:bg-emerald-600 dark:hover:bg-emerald-500"
-                  } disabled:opacity-70`}
+                  className={`flex flex-1 items-center justify-center gap-2 rounded-xl px-4 py-2 text-sm font-bold text-white transition-all ${sent
+                     ? "bg-emerald-500"
+                     : "bg-neutral-900 hover:bg-neutral-700 dark:bg-emerald-600 dark:hover:bg-emerald-500"
+                     } disabled:opacity-70`}
                >
                   {sent ? (
                      <><Check className="h-4 w-4" /> Applied! Record saved</>
@@ -259,10 +258,10 @@ export function JobsClient() {
 
    const [profile, setProfile] = useState<ProfileData>({
       name: "Charles Chan",
-      email: "",
+      email: "charleschan5991@gmail.com",
       phone: "+60183894218",
       github: "https://github.com/charles5991",
-      linkedin: "",
+      linkedin: "https://www.linkedin.com/in/charleschan5991/",
       website: "https://charlesdev2u.vercel.app",
    })
    const [copied, setCopied] = useState(false)
@@ -278,7 +277,7 @@ export function JobsClient() {
                   ...d,
                   ...Object.fromEntries(Object.entries(parsed).filter(([, v]) => v !== "" && v != null)),
                }))
-            } catch {}
+            } catch { }
          }
          // Load history
          const storedHistory = localStorage.getItem("job_applied_history")
@@ -287,7 +286,7 @@ export function JobsClient() {
                const parsed: AppliedRecord[] = JSON.parse(storedHistory)
                setHistory(parsed)
                setAppliedIds(new Set(parsed.map((r) => r.id)))
-            } catch {}
+            } catch { }
          }
       }
       fetchJobs()
@@ -398,11 +397,10 @@ export function JobsClient() {
                      <button
                         key={tab}
                         onClick={() => setActiveTab(tab)}
-                        className={`flex items-center gap-1.5 rounded-lg px-3 py-1.5 text-xs font-semibold transition-all ${
-                           activeTab === tab
-                              ? "bg-white text-neutral-900 shadow-sm dark:bg-neutral-800 dark:text-neutral-100"
-                              : "text-neutral-500 hover:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100"
-                        }`}
+                        className={`flex items-center gap-1.5 rounded-lg px-3 py-1.5 text-xs font-semibold transition-all ${activeTab === tab
+                           ? "bg-white text-neutral-900 shadow-sm dark:bg-neutral-800 dark:text-neutral-100"
+                           : "text-neutral-500 hover:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100"
+                           }`}
                      >
                         {tab === "search" && "Jobs"}
                         {tab === "history" && (
@@ -484,11 +482,10 @@ export function JobsClient() {
                                  <motion.div
                                     key={job.id}
                                     layoutId={`job-${job.id}`}
-                                    className={`relative overflow-hidden rounded-xl border p-4 shadow-sm transition-colors ${
-                                       isApplied
-                                          ? "border-emerald-200 bg-emerald-50/40 dark:border-emerald-900/50 dark:bg-emerald-950/10"
-                                          : "border-neutral-200 bg-white dark:border-neutral-800 dark:bg-neutral-900/40"
-                                    }`}
+                                    className={`relative overflow-hidden rounded-xl border p-4 shadow-sm transition-colors ${isApplied
+                                       ? "border-emerald-200 bg-emerald-50/40 dark:border-emerald-900/50 dark:bg-emerald-950/10"
+                                       : "border-neutral-200 bg-white dark:border-neutral-800 dark:bg-neutral-900/40"
+                                       }`}
                                  >
                                     {isApplied && (
                                        <div className="absolute right-3 top-3 flex items-center gap-1 rounded-full bg-emerald-100 px-2 py-0.5 text-[10px] font-bold text-emerald-700 dark:bg-emerald-950/60 dark:text-emerald-300">
@@ -541,11 +538,10 @@ export function JobsClient() {
                                        {/* Apply button */}
                                        <button
                                           onClick={() => setApplyingJob(job)}
-                                          className={`shrink-0 flex items-center gap-1.5 rounded-xl px-3 py-2 text-xs font-bold transition-all ${
-                                             isApplied
-                                                ? "bg-emerald-100 text-emerald-700 dark:bg-emerald-950/60 dark:text-emerald-300"
-                                                : "bg-neutral-900 text-white hover:bg-neutral-700 dark:bg-emerald-600 dark:hover:bg-emerald-500"
-                                          }`}
+                                          className={`shrink-0 flex items-center gap-1.5 rounded-xl px-3 py-2 text-xs font-bold transition-all ${isApplied
+                                             ? "bg-emerald-100 text-emerald-700 dark:bg-emerald-950/60 dark:text-emerald-300"
+                                             : "bg-neutral-900 text-white hover:bg-neutral-700 dark:bg-emerald-600 dark:hover:bg-emerald-500"
+                                             }`}
                                        >
                                           {isApplied ? (
                                              <><Check className="h-3.5 w-3.5" /> Applied</>
